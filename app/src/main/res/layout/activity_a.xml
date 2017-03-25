@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00506b"
+    tools:context="com.example.activitylifecycle.ActivityA"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <Button
+        android:id="@+id/button_startActivityB"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:onClick="startActivityB"
+        android:text="Start Activity B"
+        android:background="#fff90d"
+        tools:layout_editor_absoluteY="26dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button_dialog"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_startActivityB"
+        android:layout_alignBottom="@+id/button_startActivityB"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_toEndOf="@+id/button_startActivityB"
+        android:layout_toRightOf="@+id/button_startActivityB"
+        android:background="#fff90d"
+        android:onClick="startDialog"
+        android:text="Dialog"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <Button
+        android:id="@+id/button_closeApp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickButtonCloseApp"
+        android:text="Close Application"
+        android:textColor="#ffffff"
+        android:background="#0d0d0c"
+        tools:layout_editor_absoluteY="447dp"
+        tools:layout_editor_absoluteX="112dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp" />
+
+    <TextView
+        android:id="@+id/textView_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thread Counter:"
+        android:textSize="20dp"
+        android:textColor="#e3ffff"
+        tools:layout_editor_absoluteY="248dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/button_startActivityB"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/counterValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="value"
+        android:textSize="20dp"
+        android:textColor="#e3ffff"
+        tools:layout_editor_absoluteY="248dp"
+        tools:layout_editor_absoluteX="343dp"
+        android:layout_alignBaseline="@+id/textView_counter"
+        android:layout_alignBottom="@+id/textView_counter"
+        android:layout_toRightOf="@+id/textView_counter"
+        android:layout_toEndOf="@+id/textView_counter"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="#deffff"
+        android:text="Activity A"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_toRightOf="@+id/imageView5"
+        android:layout_toEndOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        app:srcCompat="@android:color/holo_green_light"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/textView_counter"
+        android:layout_alignLeft="@+id/button_startActivityB"
+        android:layout_alignStart="@+id/button_startActivityB" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/button_startActivityB"
+        android:layout_alignStart="@+id/button_startActivityB"
+        android:layout_marginTop="37dp" />
+
+
+</RelativeLayout>
